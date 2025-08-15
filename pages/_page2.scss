@@ -1,0 +1,202 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+ }
+ .body2{
+      width: 100%;
+      height: 100vh;
+      background-color:  #000;
+ }
+ .search{
+    width: 80%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+     input{
+        width: 80%;
+        height: 40px;
+        margin: 5px;
+        outline: none;
+        
+     }
+     .searchIcon{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 5px;
+        color: #fff;
+     }
+ }
+ 
+//  sass code for table
+table{
+    width: 100%;
+    color:#fff;
+    border: solid 1px #fff;
+    text-align: center;
+    margin: 10px 0;
+    tbody tr td img{
+        width: 80px;
+        height: 80px;
+    }
+    tbody tr .PRICE{
+      background-color:  #008000;
+      color: #000;
+      font-weight: 700;
+      border-radius: 5px;
+      width: fit-content;
+      height: 15px;
+      padding: 3px;
+    }
+    thead th{
+            text-transform: uppercase;
+            padding: 5px;
+    }
+  tbody  td {
+        padding: 5px;
+        button{
+         border: none;
+         border-radius: 2px ;
+         cursor: pointer;
+          background-color:  #008000;
+         color: #000;
+          font-weight: 600;
+         padding-top: 3px;
+         padding-bottom: 3px;
+        }
+      }
+}
+table tbody td button:hover{
+   background-color:  violet;
+   color:#000;
+}
+ .shopicon{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   height:40px;
+   margin-bottom:7px ;
+   margin-left: 7px;
+   .countSpan{
+      color: #fff;
+      font-weight: 600;
+      margin-left: 4px;
+   }
+   span i{
+      color: #008000;
+      font-weight: 600;
+   }
+ }
+//  css code for cart class
+.cartBox.info{
+   left:0;
+}
+.cartBox{
+   width: 80%;
+    height: 100%;
+    z-index: 10;
+    overflow-y: scroll;
+   display: flex;
+   flex-direction: column;
+   justify-content:flex-start;
+   border: solid 1px #000;
+   background-color:#fff;
+   transition: 1s;
+   position:  absolute;
+   left:-90%;
+   top:100px;
+   border-radius: 6px;
+   button{
+      width: 100px;
+   }
+   .cart .div{
+      display: flex;
+      height: fit-content;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      width: 100%;
+      
+     
+   }
+ .cart .div  .imgBox{
+      width: 120px;
+      height: 120px;
+      border-radius: 3px;
+      border: #000 solid 2px;
+      img{
+         width: 100%;
+         height: 100%;
+      }
+   }
+   .cart .div .trash{
+      color: #000;
+      cursor: pointer;
+      height: 100%;
+      margin-top:60px ;
+      margin-left: 4px;
+      font-size: 25px;
+     
+   }
+   .cart .div  .price{
+      margin-top: 57px;
+      background-color:  #008000;
+      color: #000;
+      border-radius: 5px;
+      width: fit-content;
+      height: 20px;
+      padding: 5px;
+      font-weight: 700;
+  }
+   .XMARK{
+      font-size: 20px;
+      font-weight: 600;
+      color: #000;
+      cursor: pointer;
+   }
+
+}
+ 
+.btnTotal{
+   display: flex;
+   width: 100%;
+   flex-direction: row;
+   justify-content: space-between;
+   
+   .buy{
+      width: 100px;
+      height: 40px;
+      color: #000;
+      cursor: pointer;
+      background-color:  #008000;
+      margin: 10px;
+      border: none;
+      border-radius: 4px;
+      font-family: 20px;
+      font-weight: 600;
+   
+
+   }
+   span{
+      margin-top: 15px;
+      font-size: 20px;
+      font-weight: 600;
+   }
+}
+.bag{
+   color: #fff;
+   font-size: 20px;
+   font-weight: 600;
+   position: absolute;
+   top: 65px;
+   left: 7px;
+   cursor: pointer;
+}
+.total{
+   color: #000;
+}

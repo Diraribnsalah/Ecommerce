@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/css/all.min.css">
+    <link rel="stylesheet" href="../css/main1.css" />
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  </head>
+  <body class="body1">
+    
+    <span class="icon" onclick="showBox()"><i class="fa-solid fa-list-ul"></i></span>
+    <a href="index2.html" target="_blank" class="pro">products</a>
+
+    <p><span>*</span>enter your personal informations</p>
+    <form action="/index.html" method="post">
+      <input type="text" placeholder="username..." name="username" />
+      <input type="email" placeholder="email..." name="email" required />
+       <input class="password"
+        type="password"
+        placeholder="password..."
+        name="password"
+        required
+      />
+        <span class="show" onclick="showPassword()"><i class="fa-regular fa-eye-slash"></i></span>
+   
+     
+      <textarea name="inquiry" id="txterea" placeholder="enter your inquiry..."></textarea>
+      <button type="submit">submit</button>
+    </form>
+    <div class="box">
+      <a href="index2.html" target="_blank" class="linkPro">products</a>
+      <span class="xmark" onclick="hideBox()"><i class="fa-solid fa-xmark"></i></span>
+    </div>
+    
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/script1.js"></script>
+      <script src="../js/all.min.js"></script>
+  </body>
+</html>
