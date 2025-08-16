@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="./css/css/all.min.css" />
+    <link rel="stylesheet" href="./css/main1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body class="body2">
+    <!-- <div class="shopicon">
+      <span class="countSpan">0</span>
+      <span class="basket"><i class="fa-solid fa-cart-shopping"></i></span>
+    </div> -->
+    <div class="search">
+      <input
+        type="text"
+        placeholder="search by title..."
+        class="Search"
+        onkeyup="resetData()"
+      />
+      <span class="searchIcon" onclick="search()"
+        ><i class="fa-solid fa-magnifying-glass"></i
+      ></span>
+    </div>
+    <span class="icon" onclick="showBox()"
+      ><i class="fa-solid fa-list-ul"></i
+    ></span>
+    <a href="contact.html" target="_blank" class="pro">contact</a>
+    <div class="box">
+      <a href="contact.html" target="_blank" class="linkPro">contact</a>
+      <span class="xmark" onclick="hideBox()"
+        ><i class="fa-solid fa-xmark"></i
+      ></span>
+    </div>
+    <!-- table for showing the data -->
+    <span class="bag" onclick="showCartBox()"
+      ><i class="fa-solid fa-bag-shopping"></i
+    ></span>
+    <table>
+      <thead>
+        <th>id</th>
+        <th>title</th>
+        <th>price</th>
+        <th>image</th>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="cartBox">
+      <span class="XMARK" onclick="hideCartBox()"
+        ><i class="fa-solid fa-xmark"></i
+      ></span>
+
+      <div class="cart"></div>
+      <hr />
+      <div class="btnTotal">
+        <button class="buy" onclick="buyPro()">buy</button>
+
+        <span>Total:<span class="total">0</span>$</span>
+      </div>
+    </div>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script1.js"></script>
+    <script src="./js/js/all.min.js"></script>
+  </body>
+</html>
