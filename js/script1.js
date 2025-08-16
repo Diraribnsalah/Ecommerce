@@ -66,7 +66,6 @@ async function getData() {
 getData();
 const cartBox = document.querySelector(".cartBox");
 const bag = document.querySelector(".bag");
-const countEle = document.querySelector(".countSpan");
 // function for showing the cartBox
 function showCartBox() {
   cartBox.classList.add("info");
@@ -81,10 +80,6 @@ function hideCartBox() {
 // function for showing the informations on the cartBox
 const total = document.querySelector(".total");
 async function showInfOnCartBox(i) {
-  let count;
-  count = parseInt(countEle.textContent);
-  count++;
-  countEle.textContent = count;
   const response = await fetch(api);
   const data = await response.json();
   cart.innerHTML = "";
@@ -117,13 +112,6 @@ async function deleteProduct(price, i) {
     totalPrice -= price;
     total.textContent = totalPrice.toFixed(3);
   }
-  if(+countEle.textContent>0) {
-     let count;
-     count = parseInt(countEle.textContent);
-     count--;
-    countEle.textContent = count;
-  }
-   console.log(dataPro);
   dataPro.splice(i, 1);
   cart.innerHTML = "";
   for (let i = 0; i < dataPro.length; i++) {
@@ -179,7 +167,6 @@ function buyPro() {
    `;
   }
   total.innerHTML = "0";
-  countEle.innerHTML = "0";
   alert("the purechase was completed successfuly");
   cartBox.classList.remove("info");
   bag.style.display = "inline";

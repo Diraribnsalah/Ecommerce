@@ -74,23 +74,23 @@ table tbody td button:hover{
    background-color:  violet;
    color:#000;
 }
- .shopicon{
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   height:40px;
-   margin-bottom:7px ;
-   margin-left: 7px;
-   .countSpan{
-      color: #fff;
-      font-weight: 600;
-      margin-left: 4px;
-   }
-   span .basket{
-      color: #008000;
-      font-weight: 600;
-   }
- }
+//  .shopicon{
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: flex-start;
+//    height:40px;
+//    margin-bottom:7px ;
+//    margin-left: 7px;
+//    // .countSpan{
+//    //    color: #fff;
+//    //    font-weight: 600;
+//    //    margin-left: 4px;
+//    // }
+//    // span .basket{
+//    //    color: #008000;
+//    //    font-weight: 600;
+//    // }
+//  }
 //  css code for cart class
 .cartBox.info{
    left:0;
